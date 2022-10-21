@@ -3,10 +3,10 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
+  <link rel="icon" href="/images/site_logo.png">
   
-  
-  <title>test 2 | Hexo</title>
-  <meta name="author" content="John Doe" />
+  <title>test 2 | 1398号监听员的个人博客</title>
+  <meta name="author" content="1398号监听员" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,14 +20,16 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="test 2">
 <meta property="og:url" content="http://example.com/2022/10/21/test-2/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="1398号监听员的个人博客">
 <meta property="og:description" content="空测试">
 <meta property="og:locale">
+<meta property="og:image" content="http://example.com/images/site_logo.png">
 <meta property="article:published_time" content="2022-10-21T11:11:54.000Z">
 <meta property="article:modified_time" content="2022-10-21T11:12:37.491Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="1398号监听员">
 <meta property="article:tag" content="markdown">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/site_logo.png">
   
   <!-- 站点验证相关 -->
   
@@ -63,13 +65,13 @@
   <style>
     
       .kratos-cover.kratos-cover-2 {
-        background-image: url('/images/banner.webp');
+        background-image: url('/images/banner.png');
       }
     
     
       @media(min-width:768px) {
         body.custom-background {
-          background-image: url('/images/bg.webp');
+          background-image: url('/images/background.png');
         }
       }
     
@@ -89,6 +91,66 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
+                                        <li>
+                                            
+                                                <a href="/">
+                                            
+                                                
+                                                    <i class="fa fa-home"></i>
+                                                
+                                                首页
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
+                                                
+                                                    <i class="fa fa-link"></i>
+                                                
+                                                链接
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://space.bilibili.com/161643711">
+                                                                
+                                                                bilibili
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/1398hao-jian-ting-yuan">
+                                                                
+                                                                知乎
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://github.com/1398listener">
+                                                                
+                                                                github
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
                                     
                                 
                             </ul>
@@ -98,7 +160,7 @@
             </header>
             <header id="kratos-mobile-topnav" class="kratos-topnav">
                 <div class="container">
-                    <div class="color-logo"><a href="/">Hexo</a></div>
+                    <div class="color-logo"><a href="/">1398号监听员的个人博客</a></div>
                     <div class="nav-toggle">
                         <a class="kratos-nav-toggle js-kratos-nav-toggle">
                             <i></i>
@@ -112,8 +174,8 @@
             <div class="kratos-cover kratos-cover-2 text-center">
                 <div class="desc desc2 animate-box">
                     <a href="/">
-                        <h2>Hexo</h2> <br />
-                        <span></span>
+                        <h2>1398号监听员的个人博客</h2> <br />
+                        <span>基于hexo开发</span>
                     </a>
                 </div>
             </div>
@@ -142,7 +204,7 @@
             <ul class="kratos-post-meta text-center">
                 <li><time datetime="2022-10-21T11:11:54.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-10-21</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
-                    <i class="fa fa-user"></i> 作者 <span itemprop="name">John Doe</span>
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">1398号监听员</span>
                 </li>
                 <li>
                     <i class="fa fa-edit"></i> 
@@ -268,8 +330,35 @@
             </div>
             
             
+            <div class="nav-next clearfix">
+                <a title=" 资源文件夹测试" href="/2022/10/22/资源文件夹测试/">下一篇 &gt;</a>
+            </div>
+            
         </nav>
     
+    
+        <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
+<div id="gitalk-container" class="post-comments lazy-load bg-image" style="padding-left:2rem; padding-right:2rem;"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            console.log('Gitalk loading...');
+            const gitalk = new Gitalk(Object.assign({
+                id: '/2022/10/21/test-2/',
+                path: '/2022/10/21/test-2/'
+            }, JSON.parse('{"clientID":"5e88af365cc949db9618","clientSecret":"d265712f44da6eafeace128f14fc2e2f5bb71fa9","repo":"hello-world","owner":"1398listener","admin":["1398listener"],"distractionFreeMode":false}')));
+
+            gitalk.render('gitalk-container');
+        }
+        if (typeof Gitalk === 'undefined') {
+            const src = '/vendors/gitalk@1.7.2/dist/gitalk.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">comments powered by Gitalk.</a></noscript>
     
 </article>
 
@@ -290,11 +379,11 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+            <img class="about-photo" src="/images/profile.png" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
-        <p class="text-center"></p>
+        <p class="text-center">Fighting to graduate</p>
     </div>
     <div class="site-meta">
         <a class="meta-item" href="/archives/">
@@ -302,7 +391,7 @@
                 文章
             </span>
             <span class="count">
-                3
+                4
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -310,7 +399,7 @@
                 分类
             </span>
             <span class="count">
-                1
+                2
             </span>
         </a>
         <a class="meta-item" href="/tags/">
@@ -318,7 +407,7 @@
                 标签
             </span>
             <span class="count">
-                1
+                2
             </span>
         </a>
     </div>
@@ -329,7 +418,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a><span class="category-list-count">2</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a><span class="category-list-count">2</span></li></ul>
   </aside>
 
 
@@ -338,7 +427,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/markdown/" style="font-size: 0.6em;">markdown</a>
+        <a href="/tags/assert/" style="font-size: 0.6em;">assert</a> <a href="/tags/markdown/" style="font-size: 0.8em;">markdown</a>
       </div>
   </aside>
 
@@ -349,6 +438,12 @@
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
+            <a class="list-group-item" href="/2022/10/22/%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E5%A4%B9%E6%B5%8B%E8%AF%95/"><i class="fa  fa-book"></i> 资源文件夹测试</a>
+            
+          
         
           
           
@@ -387,22 +482,22 @@
                     <ul class="kratos-social-icons">
                         
                         
-                        <li><a target="_blank" rel="nofollow" href="https://t.me/CandyUnion"><i class="fa fa-telegram"></i></a></li>
                         
                         
                         
-                        <li><a target="_blank" rel="me" href="https://nya.one/@Candinya"><i class="fa fa fa-share-alt-square"></i></a></li>
-                        <li><a target="_blank" rel="nofollow" href="https://github.com/Candinya"><i class="fa fa-github"></i></a></li>
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/1398listener"><i class="fa fa-github"></i></a></li>
                         
                     </ul>
                     <ul class="kratos-copyright">
                         <div>
-                            <li>&copy; 2022 Hexo 版权所有.</li>
+                            <li>&copy; 2022 1398号监听员的个人博客 版权所有.</li>
                             <li>本站已运行<span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
                             <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
-                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by John Doe.</li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by 1398号监听员.</li>
                         </div>
                         <div>
                             <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
@@ -462,7 +557,7 @@
     <meting-js
         server="netease"
         type="playlist"
-        id="3204190542"
+        id="2562363367"
         order="random"
         fixed="true"
     >
