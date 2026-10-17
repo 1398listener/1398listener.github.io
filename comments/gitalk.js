@@ -8,9 +8,12 @@
           return;
         }
         const path = container.getAttribute("data-path");
+        // GitHub 标签最多 50 个字符。短路径保留旧 ID，长路径使用主题生成的哈希。
+        const commentId = path.length <= 50
+          ? path
+          : container.getAttribute("data-path-hash");
         const gitalk = new Gitalk(Object.assign({
-            id: path, // 直接使用路径作为 id
-            // id: container.getAttribute("data-path-hash"), // 使用 hash 作为 ID
+            id: commentId,
             path: path,
         }, {
           clientID: 'Ov23liT5HoQG2tAJp6oZ',
